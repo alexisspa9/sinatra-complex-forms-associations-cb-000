@@ -5,16 +5,16 @@
 
   <br></br>
 
-  <input type="text" name="pet[name]" id="owner_name">
+  <input type="text" name="pet[name]" id="pet_name">
 
   <br></br>
 
-  <label>Choose an existing pet:</label>
+  <label>Choose an existing owner:</label>
 
   <br></br>
 
-  <%Pet.all.each do |pet|%>
-    <input type="checkbox" name="owner[pet_ids][]" id="<%=pet.id%>" value="<%=pet.id%>"><%=pet.name%></input>
+  <%Owner.all.each do |owner|%>
+    <input type="checkbox" name="owner[owner_ids][]" id="<%=owner.id%>" value="<%=owner.id%>"><%=pownername%></input>
   <%end%>
 
   <br></br>
